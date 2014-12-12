@@ -179,7 +179,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -251,6 +250,20 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\data\RatioCalculator.Data.Models\RatioCalculator.Data.Models.csproj">
+      <Project>{82f230bf-4a88-404d-bf3d-ed18e303c3dc}</Project>
+      <Name>RatioCalculator.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\RatioCalculator.Data\RatioCalculator.Data.csproj">
+      <Project>{9fb84df9-9483-414a-93b6-ae2a09f22e1f}</Project>
+      <Name>RatioCalculator.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RatioCalculator.Web.Infrastructure\RatioCalculator.Web.Infrastructure.csproj">
+      <Project>{00843913-62b7-4b0c-92ae-0c39d94b96f3}</Project>
+      <Name>RatioCalculator.Web.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
