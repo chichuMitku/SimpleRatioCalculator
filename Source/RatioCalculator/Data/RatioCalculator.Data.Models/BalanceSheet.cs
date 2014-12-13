@@ -1,7 +1,8 @@
 ﻿namespace RatioCalculator.Data.Models
 {
-    using RatioCalculator.Data.Common.Models;
     using System.ComponentModel.DataAnnotations;
+
+    using RatioCalculator.Data.Common.Models;
 
     public class BalanceSheet : IFinancialStatement
     {

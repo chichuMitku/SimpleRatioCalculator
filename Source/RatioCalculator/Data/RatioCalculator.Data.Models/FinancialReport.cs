@@ -1,10 +1,11 @@
 ﻿namespace RatioCalculator.Data.Models
 {
-    using RatioCalculator.Data.Common.Models;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+
+    using RatioCalculator.Data.Common.Models;
 
     public class FinancialReport : IFinancialReport, IAuditInfo, IDeletableEntity
     {

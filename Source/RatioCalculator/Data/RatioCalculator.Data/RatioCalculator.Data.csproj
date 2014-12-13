@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IRatioCalculatorData.cs" />
+    <Compile Include="RatioCalculatorData.cs" />
     <Compile Include="RatioCalculatorDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

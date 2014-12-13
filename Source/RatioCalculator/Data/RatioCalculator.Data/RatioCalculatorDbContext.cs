@@ -1,16 +1,13 @@
 ﻿namespace RatioCalculator.Data
 {
     using System;
-    using System.Collections.Generic;
+    using System.Data.Entity;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     using Microsoft.AspNet.Identity.EntityFramework;
 
-    using RatioCalculator.Data.Models;
     using RatioCalculator.Data.Common.Models;
-    using System.Data.Entity;
+    using RatioCalculator.Data.Models;
 
     public class RatioCalculatorDbContext : IdentityDbContext<User>
     {
