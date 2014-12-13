@@ -23,8 +23,12 @@
         public virtual User Author { get; set; }
 
         [Index]
+        [Required]
+        [StringLength(100, MinimumLength = 3)]
         public string Name { get; set; }
 
+        [Required]
+        [StringLength(50, MinimumLength = 2)]
         public string CompanyName { get; set; }
 
         public virtual ICollection<Comment> Comments 
