@@ -30,13 +30,7 @@
         [Required]
         [StringLength(50, MinimumLength = 2)]
         public string CompanyName { get; set; }
-
-        public virtual ICollection<Comment> Comments 
-        {
-            get { return this.comments; }
-            set { this.comments = value; } 
-        }
-
+        
         [Required]
         public DateTime EndDate { get; set; }
 
@@ -61,5 +55,10 @@
 
         public virtual IFinancialStatement ProfitLossStatement { get; set; }
 
+        public virtual ICollection<Comment> Comments
+        {
+            get { return this.comments; }
+            set { this.comments = value; }
+        }
     }
 }

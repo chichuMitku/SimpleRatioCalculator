@@ -12,9 +12,9 @@
     using RatioCalculator.Data.Common.Models;
     using System.Data.Entity;
 
-    public class ApplicationDbContext : IdentityDbContext<User>
+    public class RatioCalculatorDbContext : IdentityDbContext<User>
     {
-        public ApplicationDbContext()
+        public RatioCalculatorDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
@@ -29,9 +29,9 @@
 
         public IDbSet<FinancialStatementItem> FinancialStatementItems { get; set; }
 
-        public static ApplicationDbContext Create()
+        public static RatioCalculatorDbContext Create()
         {
-            return new ApplicationDbContext();
+            return new RatioCalculatorDbContext();
         }
 
         public override int SaveChanges()

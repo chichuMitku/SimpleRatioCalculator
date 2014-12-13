@@ -1,5 +1,6 @@
 ﻿namespace RatioCalculator.Data.Models
 {
+    using System.Collections.Generic;
     using System.Security.Claims;
     using System.Threading.Tasks;
 
@@ -8,6 +9,18 @@
 
     public class User : IdentityUser
     {
+        private ICollection<FinancialReport> reports;
+
+        public User()
+        {
+            this.reports = new HashSet<FinancialReport>();
+        }
+
+        public virtual ICollection<FinancialReport> Reports
+        { 
+            get { return this.reports; }
+            set { this.reports = value; }
+        }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
