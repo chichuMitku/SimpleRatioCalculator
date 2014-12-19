@@ -7,7 +7,7 @@
     using RatioCalculator.Data.Common.Repository;
     using RatioCalculator.Data.Models;
 
-    public class RatioCalculatorData : RatioCalculator.Data.IRatioCalculatorData
+    public class RatioCalculatorData : IRatioCalculatorData
     {
         private readonly DbContext context;
 

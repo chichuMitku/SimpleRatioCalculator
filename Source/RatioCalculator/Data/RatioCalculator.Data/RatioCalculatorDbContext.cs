@@ -8,12 +8,14 @@
 
     using RatioCalculator.Data.Common.Models;
     using RatioCalculator.Data.Models;
+    using RatioCalculator.Data.Migrations;
 
     public class RatioCalculatorDbContext : IdentityDbContext<User>
     {
         public RatioCalculatorDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<RatioCalculatorDbContext, Configuration>());
         }
 
         public IDbSet<BalanceSheet> BalanceSheets { get; set; }

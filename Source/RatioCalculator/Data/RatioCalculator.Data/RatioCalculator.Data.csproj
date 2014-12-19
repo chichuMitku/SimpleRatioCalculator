@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRatioCalculatorData.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RatioCalculatorData.cs" />
     <Compile Include="RatioCalculatorDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
