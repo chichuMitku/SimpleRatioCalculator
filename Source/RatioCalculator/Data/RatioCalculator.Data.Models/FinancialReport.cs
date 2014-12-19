@@ -50,11 +50,11 @@
 
         public int BalanceSheetId { get; set; }
 
-        public virtual IFinancialStatement BalanceSheet { get; set; }
+        public virtual BalanceSheet BalanceSheet { get; set; }
 
         public int ProfitLossStatementId { get; set; }
 
-        public virtual IFinancialStatement ProfitLossStatement { get; set; }
+        public virtual ProfitLossStatement ProfitLossStatement { get; set; }
 
         public virtual ICollection<Comment> Comments
         {
