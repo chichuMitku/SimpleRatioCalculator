@@ -7,22 +7,22 @@
 
     public interface IRatioCalculatorData
     {
+        DbContext Context { get; }
+
         IRepository<BalanceSheet> BalanceSheets { get; }
 
         IRepository<Comment> Comments { get; }
-
-        DbContext Context { get; }
-
-        void Dispose();
 
         IRepository<FinancialReport> FinancialReports { get; }
 
         IRepository<FinancialStatementItem> FinancialStatementItems { get; }
 
+        IRepository<User> Users { get; }
+
         IRepository<ProfitLossStatement> ProfitLossStatements { get; }
 
-        int SaveChanges();
+        void Dispose();
 
-        IRepository<User> Users { get; }
+        int SaveChanges();
     }
 }
