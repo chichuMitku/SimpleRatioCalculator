@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyHelpers\AssemblyHelpers.cs" />
     <Compile Include="Models\AuditInfo.cs" />
     <Compile Include="Models\IAuditInfo.cs" />
     <Compile Include="Models\IDeletableEntity.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="Models\IFinancialStatement.cs" />
     <Compile Include="Models\IOrderable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomGenerator\RandomGenerator.cs" />
     <Compile Include="Repository\DeletableEntityRepository.cs" />
     <Compile Include="Repository\GenericRepository.cs" />
     <Compile Include="Repository\IDeletableEntityRepository.cs" />
